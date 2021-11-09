@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Semester1</string>
+    <string name="login">Login</string>
+    <string name="masuk">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="aboutme">AboutMe</string>
+    <string name="noklent">Nama=Noklen Fardian Erix</string>
+    <string name="kelas">Kelas=XII RPL B</string>
+    <string name="nomor">Nomor=27</string>
+    <string name="bantuan">Bantuan</string>
+    <string name="penjelasan">Pilihlah jawaban berdasarkan Question yang ditampilkan. Dan Jika anda benar menjawab maka anda mendapat 10 point dan jika salah mendapat 0 point.(Noklent)</string>
+    <string name="mulai">Mulai</string>
+    <string name="riwarat">Riwarat</string>
+</resources>
