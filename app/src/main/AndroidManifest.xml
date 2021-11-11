@@ -14,6 +14,7 @@
         <activity android:name=".bantuan" />
         <activity android:name=".Other" />
         <activity android:name=".AboutMe" />
+        <activity android:name=".Riwayat" />
 
         <activity
             android:name=".MainActivity"

@@ -7,6 +7,7 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Other  extends AppCompatActivity {
+    Game hasil=new Game();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,10 @@ public class Other  extends AppCompatActivity {
         Intent intent2 = new Intent(Other.this, bantuan.class);
         Other.this.startActivity(intent2);
 
+    }
+    public void riwayat(View view) {
+        Intent intent2 = new Intent(Other.this,Riwayat.class);
+        Other.this.startActivity(intent2);
     }
 
 }

@@ -13,11 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+
 public class MainActivity2 extends AppCompatActivity {
     Button btn_start, btn_answer0, btn_answer1, btn_answer2, btn_answer3;
     TextView tv_score, tv_question, tv_timer, tv_bottommessage;
     ProgressBar prog_timer;
-    ArrayList riwayat = new ArrayList();
+
 
     Game g =new Game();
     int kurangDetik=30;
@@ -46,12 +47,16 @@ public class MainActivity2 extends AppCompatActivity {
                 }
             }, 3000);
 
-
+            Intent selesai=new Intent(getApplicationContext(),Riwayat.class);
+            selesai.putStringArrayListExtra("jawaban",g.getJawaban());
+            MainActivity2.this.startActivity(selesai);
         }
+
     };
     public void other(View view) {
         Intent intent2 = new Intent(MainActivity2.this, Other.class);
         MainActivity2.this.startActivity(intent2);
+
 
 
     }
@@ -78,6 +83,9 @@ public class MainActivity2 extends AppCompatActivity {
         tv_question.setText("");
         tv_bottommessage.setText("Pencet Mulai");
         tv_score.setText("0pts");
+
+
+
 
         View.OnClickListener startButtonClickListener = new View.OnClickListener() {
             @Override
@@ -128,7 +136,10 @@ public class MainActivity2 extends AppCompatActivity {
         btn_answer3.setEnabled(true);
         tv_question.setText(g.getCurrentQuestion().getQuestionPhrase());
 
+
         tv_bottommessage.setText(g.getNumberCorrect()+"/"+(g.getTotalQuestions()-1));
+
+
 
     }
 

@@ -10,7 +10,6 @@ public class Question  {
     // 4 pilihan yang akan dipilih
     private int[] answerArray;
 
-    //  4Pilihan yang bnar
     private int answerPosition;
 
     //maksimal jumlah jawaban
@@ -40,6 +39,9 @@ public class Question  {
         answerArray[answerPosition]=answer;
 
     }
+
+
+
     private int []shuffleArray(int[]array){
         int index,temp;
         Random randomNumberGenerator= new Random();
